@@ -35,7 +35,7 @@ const observerUseful = document.querySelector(".observer__useful");
 
 //observerBtn
 const observerBtn = document.querySelector(".observerBtn");
-
+const visitorSection = document.querySelector(".obsVisitor");
 const textContent = [observerRegister, observerparticipant, observerUseful];
 for (let i = 0; i < observerBtn.children.length; i++) {
   observerBtn.children[i].addEventListener("click", function () {
@@ -48,7 +48,7 @@ for (let i = 0; i < observerBtn.children.length; i++) {
     }
 
     textContent[i].style.display = "block";
-
+    visitorSection.scrollIntoView({ behavior: "smooth" });
     observerBtn.children[i].classList.add("observerBtnActive");
   });
 }
@@ -167,7 +167,7 @@ AOS.init({
   animatedClassName: "aos-animate", // class applied on animation
   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 100, // the delay on debounce used while resizing window (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
   throttleDelay: 50, // the delay on throttle used while scrolling the page (advanced)
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
