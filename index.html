@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Mebel &Decor</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="container nav_wrapper">
+        <a href="#"
+          ><img class="nav_logo" src="./images/icon_logo_CAEx.svg" alt="logo" />
+        </a>
+        <ul class="nav_list">
+          <li class="nav_list_info">
+            <a href="#выставке" data-lang="navItem_1">О выставке</a>
+          </li>
+          <li class="nav_list_info">
+            <a href="#bustopoint" data-lang="navItem_2">Автобусные остановки</a>
+          </li>
+          <li class="nav_list_info">
+            <a href="#" data-lang="navItem_3">Экспонентам</a>
+          </li>
+          <li class="nav_list_info">
+            <a href="#service" data-lang="navItem_4">Услуги</a>
+          </li>
+          <li class="nav_list_info">
+            <a href="#visitors" data-lang="navItem_5">Посетителям</a>
+          </li>
+          <li class="nav_list_info">
+            <a href="#contact" data-lang="navItem_6">Контакты</a>
+          </li>
+          <li class="nav_list_info">
+            <select class="nav_list_select" id="lang">
+              <option value="ru" data-lang="ru">Рус</option>
+              <option value="uz" data-lang="uz">Узб</option>
+              <option value="en" data-lang="en">Анг</option>
+            </select>
+          </li>
+        </ul>
+
+        <button id="hamburgerBtn">
+          <i id="menu_bars" class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <!--End of Header -->
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <span class="hero_image">
+          <img src="./images/jp_hero.jpg" alt="image" data-aos="zoom-in-up" />
+        </span>
+        <div class="container hero_wrapper">
+          <a href="#"
+            ><img src="./images/icon_logo_orange.svg" alt="" data-aos="fade-up"
+          /></a>
+          <p data-aos="fade-up" data-aos-offset="150" data-lang="hero_title">
+            Основная цель CAEx Mebel &Decor 2024 - содействие развитию именно
+            малого и среднего бизнеса, образующего фундамент всего делового
+            сообщества и экономики государства в целом.
+          </p>
+        </div>
+      </section>
+      <!--End of Hero -->
+      <!-- Intact  -->
+      <section class="intact" id="выставке">
+        <div class="container intact_wrapper">
+          <div class="intact_left">
+            <img
+              class="intact_image"
+              src="./images/jp_popUp_intact.jpg"
+              alt="popUp"
+              data-aos="fade-down"
+              data-aos-offset="300"
+            />
+            <div class="intact_left-content">
+              <h3
+                class="intact_title"
+                data-aos="fade-right"
+                data-lang="intact_title"
+              >
+                Выставка и ее <span>цели</span>
+              </h3>
+              <hr />
+              <p data-aos="fade-right" data-lang="intact_content_1">
+                1-ая республиканская выставка-ярмарка CAEx Mebel &Decor 2024
+                состоится 15-18 мая текущего года в Ташкенте (Узбекистан) на
+                территории нового многофункционального выставочного центра CAEx
+                (Central Asian Expo Uzbekistan), расположенного по адресу: г.
+                Ташкент, Мирзо-Улугбекский р-н, МСГ Баркамол, ул. Миллий бог,
+                д.1 (ориентир: Central Asian University). CAEx Mebel &Decor 2024
+                - это первое в своем роде масштабное бизнес-мероприятие, которое
+                позволит определить актуальные тенденции рынка и объединить на
+                своей площадке производственные и торговые компании, занятые в
+                сфере мебельной промышленности, а также предметов интерьера и
+                декора. Основная цель CAEx Mebel &Decor 2024 - содействие
+                развитию именно малого и среднего бизнеса, образующего фундамент
+                всего делового сообщества и экономики государства в целом.
+                Поэтому выставка-ярмарка будет проходить в смешанном формате, и
+                затронет как сегмент B2C, так и более привычный для подобных
+                мероприятий сегмент B2B.
+              </p>
+            </div>
+          </div>
+
+          <div class="intact_right">
+            <img
+              src="./images/jp_intact.jpg"
+              alt="image"
+              data-aos="fade-left"
+              data-aos-offset="105"
+            />
+          </div>
+        </div>
+      </section>
+      <!--End of Intact -->
+      <!-- Intact  -->
+      <section class="intact">
+        <div class="container intact_wrapper section__row-reverse">
+          <div class="intact_left">
+            <img
+              class="intact_image"
+              src="./images/jp_popUp_range.jpg"
+              alt="popUp"
+              data-aos="fade-down"
+              data-aos-offset="300"
+            />
+            <div class="intact_left-content">
+              <h3
+                class="intact_title"
+                data-aos="fade-right"
+                data-lang="intact_title_2"
+              >
+                Спектр <span>возможностей</span>
+              </h3>
+              <hr />
+              <p data-aos="fade-right" data-lang="intact_content_2">
+                Тем самым, участники CAEx Mebel & Decor 2024 получат широкий
+                спектр уникальных возможностей, среди которых такие, как:
+              </p>
+
+              <ul>
+                <li data-aos="fade-right" data-lang="intact_content_2_list_1">
+                  • Ознакомление с новыми разработками отрасли и технологиями
+                  производителей
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_2_list_2">
+                  • Укрепление партнерских взаимоотношений с действующими
+                  клиентами
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_2_list_3">
+                  • Выход на внутренний и международный рынок
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_2_list_4">
+                  • Привлечение новых эффективных каналов продаж
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_2_list_5">
+                  • Расширение географии поставок своей продукции
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_2_list_6">
+                  • Установление контактов с персонами, принимающими решения о
+                  выборе поставщиков
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_2_list_7">
+                  • Определение портрета и выявление потребностей своей целевой
+                  аудитории
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_2_list_8">
+                  • Повышение уровня лояльности к своей продукции среди конечных
+                  потребителей
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_2_list_9">
+                  • А также, монетизация своих интересов, путем осуществления
+                  торговли прямо на выставочной площадке
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="intact_right">
+            <img
+              src="./images/jp_range.jpg"
+              alt="image"
+              data-aos="fade-right"
+              data-aos-offset="105"
+            />
+          </div>
+        </div>
+      </section>
+      <!--End of Intact -->
+      <!-- Intact  -->
+      <section class="intact paddingB">
+        <div class="container intact_wrapper">
+          <div class="intact_left">
+            <img
+              class="intact_image"
+              src="./images/jp_popUp_chapter.jpg"
+              alt="popUp"
+              data-aos="fade-down"
+              data-aos-offset="300"
+            />
+            <div class="intact_left-content">
+              <h3
+                class="intact_title"
+                data-aos="fade-right"
+                data-lang="intact_title_3"
+              >
+                Технические <span>разделы</span>
+              </h3>
+              <hr />
+              <p data-aos="fade-right" data-lang="intact_content_3">
+                Тематические разделы CAEx Mebel & Decor:
+              </p>
+
+              <ul>
+                <li data-aos="fade-right" data-lang="intact_content_3_list_1">
+                  • Мебель и фурнитура, оборудование для производства мебели
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_3_list_2">
+                  • Бытовое и наружное освещение
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_3_list_3">
+                  • Посуда для дома и HoReCa
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_3_list_4">
+                  • Ковры и напольные покрытия
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_3_list_5">
+                  • Шторы и жалюзи
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_3_list_6">
+                  • Обои и стеновые покрытия
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_3_list_7">
+                  • Предметы декора
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_3_list_8">
+                  • Озеленение
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_3_list_9">
+                  • Ландшафтный дизайн
+                </li>
+                <li data-aos="fade-right" data-lang="intact_content_3_list_10">
+                  • Услуги по дизайну интерьеров
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="intact_right">
+            <img
+              src="./images/jp_chapter.jpg"
+              alt="image"
+              data-aos="fade-left"
+              data-aos-offset="105"
+            />
+          </div>
+        </div>
+      </section>
+      <!--End of Intact -->
+
+      <!--* End of statistic info section -->
+      <section class="statistic__info">
+        <div class="container statistic__info-wrapper">
+          <div data-aos="flip-down">
+            <h2>3</h2>
+            <h3 data-lang="days_of_exhibition">Дня выставки</h3>
+          </div>
+
+          <hr />
+
+          <div data-aos="flip-down">
+            <h2>300+</h2>
+            <h3 data-lang="participants">Участников</h3>
+          </div>
+
+          <hr />
+
+          <div data-aos="flip-down">
+            <h2>8000+</h2>
+            <h3 data-lang="visitors">Посетителей</h3>
+          </div>
+
+          <hr />
+
+          <div data-aos="flip-down">
+            <h2>10 000 м2</h2>
+            <h3 data-lang="exhibition_area">Площадь выставки</h3>
+          </div>
+        </div>
+      </section>
+      <!--* End of statistic info section -->
+
+      <!-- Bus stop point v2 styles -->
+      <section class="busstop__point" id="bustopoint">
+        <div class="container busstop__point__wrapper">
+          <div class="busstop__point-content">
+            <h2 data-aos="fade-right" data-lang="bus_stop_points_title">
+              Точки остановок бесплатных автобусов
+            </h2>
+
+            <hr />
+
+            <ul>
+              <li data-aos="fade-right" data-lang="bus_stop_point_0">
+                • Проспект Бунёдкор, 52/2, ориентир: метро Чиланзар
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_1">
+                • ТКАД, 7А/1, парковка Урикзар
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_2">
+                • Проспект Беруни, 47, парковка Экобозор Беруний
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_3">
+                • Парковка парка Ашхабад
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_4">
+                • Улица Авиасозлар, парковка рынка «Кадышева», напротив кофейни
+                «Rodena»
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_5">
+                • Улица Кушбеги, парковка ресторана «Qanotchi»
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_6">
+                • Проспект Мирзо Улугбека, парковка «Экобазар» Чимган
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_7">
+                • ТЦ Ташкент, площадь Чорсу, 3А, напротив магазина «Kitoblar
+                Olami»
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_8">
+                • ТЦ «Абусахий» Центр, Бунёдкор проспект 156/1, парковка
+                «Абу Сахий»
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_9">
+                • Улица Янги Сергели, парковка «Райхон Миллий Таомлар», напротив
+                «Корзинка»
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_10">
+                • «Алайский» рынок, метро Абдуллы Кадыри
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_11">
+                • ТКАД, парковка рынка «Куйлюк», ориентир: напротив
+                ТРЦ «Compass»
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_12">
+                • Улица Усмана Насыра, парковка Южного Вокзала
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_13">
+                • Мирзо Улугбекский район, остановка Буюк Ипак йули
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_14">
+                • Юнусабадский район, Ахмадониш 47В, парковка «Универсам»
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_15">
+                • Улица Фурката, парковка «Magic City»
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_16">
+                • Улица Туркистан, конечная автобусной станции Северного
+                Вокзала, метро «Ташкент»
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_17">
+                • Малая кольцевая дорога, парковка «Oq Tepa Lavash» Gulzor
+              </li>
+              <li data-aos="fade-right" data-lang="bus_stop_point_18">
+                • Уста Ширин 124 А, ориентир: рынок Жомий, напротив магазина
+                «AKFA»
+              </li>
+            </ul>
+          </div>
+
+          <div class="busstop__point-map" id="bus_stop_point__map"></div>
+        </div>
+      </section>
+      <!-- End of Bus stop point v2 styles -->
+
+      <!--* Our services section -->
+      <section class="services" id="service">
+        <div class="container services__wrapper">
+          <div class="service__image">
+            <img
+              src="./images/services__image.jpg"
+              alt="services"
+              data-aos="fade-right"
+            />
+          </div>
+          <div class="service__content">
+            <div>
+              <h2 data-aos="fade-left" data-lang="services_title">
+                Наши услуги
+              </h2>
+
+              <ul>
+                <li data-aos="fade-left">
+                  <img src="./images/service__star.svg" alt="star" />
+                  <span data-lang="service_1">Аренда конференц-зала</span>
+                </li>
+                <li data-aos="fade-left">
+                  <img src="./images/service__star.svg" alt="star" />
+                  <span data-lang="service_2">Аренда переговорных комнат</span>
+                </li>
+                <li data-aos="fade-left">
+                  <img src="./images/service__star.svg" alt="star" />
+                  <span data-lang="service_3">Услуга охраны стенда</span>
+                </li>
+                <li data-aos="fade-left">
+                  <img src="./images/service__star.svg" alt="star" />
+                  <span data-lang="service_4"
+                    >Индивидуальная уборка стенда</span
+                  >
+                </li>
+                <li data-aos="fade-left">
+                  <img src="./images/service__star.svg" alt="star" />
+                  <span data-lang="service_5"
+                    >Аренда дополнительного оборудования и технических
+                    подключений</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--* End of Our services section -->
+
+      <!-- Observers section v2 -->
+      <section class="observers">
+        <div class="container observers__wrapper">
+          <div class="observer__content">
+            <h2 class="title" data-aos="fade-right" data-lang="observers_title">
+              Участникам
+            </h2>
+
+            <p data-aos="fade-right" data-lang="observers_subtitle">
+              Как стать участником выставки?
+            </p>
+
+            <ul>
+              <li data-aos="fade-right" data-lang="observer_1">
+                Участники CAEx Недвижимость 2024 получат широкий спектр
+                уникальных возможностей для развития своего бизнеса, среди
+                которых:
+              </li>
+              <li data-aos="fade-right" data-lang="observer_2">
+                • Ознакомление с актуальными тенденциями рынка, новыми
+                разработками и технологиями
+              </li>
+              <li data-aos="fade-right" data-lang="observer_3">
+                • Мониторинг активности конкурентов
+              </li>
+              <li data-aos="fade-right" data-lang="observer_4">
+                • Укрепление партнёрских взаимоотношений с существующими
+                клиентами и установление новых деловых контактов
+              </li>
+              <li data-aos="fade-right" data-lang="observer_5">
+                • Расширение географии поставок своей продукции, выход
+                на внутренний и международный рынок
+              </li>
+              <li data-aos="fade-right" data-lang="observer_6">
+                • Определение портрета и выявление потребностей своей целевой
+                аудитории
+              </li>
+              <li data-aos="fade-right" data-lang="observer_7">
+                • Повышение уровня лояльности к своей продукции среди конечных
+                потребителей
+              </li>
+              <li data-aos="fade-right" data-lang="observer_8">
+                • Монетизация своих интересов путём осуществления прямых продаж
+                непосредственно на выставочной площадке
+              </li>
+              <li data-aos="fade-right" data-lang="observer_9">
+                • Определение портрета и выявление потребностей своей целевой
+                аудитории
+              </li>
+              <li data-aos="fade-right" data-lang="observer_10">
+                • Повышение уровня лояльности к своей продукции среди конечных
+                потребителей
+              </li>
+              <li data-aos="fade-right" data-lang="observer_11">
+                • Монетизация своих интересов путём осуществления прямых продаж
+                непосредственно на выставочной площадке
+              </li>
+            </ul>
+
+            <h3 data-aos="fade-right" data-lang="registration_link">
+              Регистрация
+            </h3>
+          </div>
+          <div class="observer__image">
+            <img
+              src="./images/observer__image1.jpeg"
+              alt="uchastnikam"
+              data-aos="zoom-in-left"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- End of Observers section v2 -->
+
+      <!-- Observers section v2 -->
+      <section class="observers" id="visitors">
+        <div class="container observers__wrapper section__row-reverse">
+          <div class="observer__content">
+            <div class="observer__register">
+              <h2
+                class="title"
+                data-aos="fade-right"
+                data-lang="visitors_title"
+              >
+                Посетителям
+              </h2>
+
+              <p data-aos="fade-right" data-lang="visitors_subtitle">
+                Как стать участником выставки?
+              </p>
+
+              <ul>
+                <li data-aos="fade-right" data-lang="visitor_1">
+                  Удобное расположение CAEx даёт возможность всем
+                  его посетителям беспрепятственно добраться до выставочного
+                  комплекса. Выставочный комплекс находится в шаговой
+                  доступности от парка «Янги Узбекистон». Для удобства
+                  посетителей на время проведения выставки будет организован
+                  групповой трансфер. Комфортабельные шаттлы (автобусы)
+                  бесплатно доставят всех желающих от точки сбора.
+                </li>
+                <li data-aos="fade-right" data-lang="visitor_2">
+                  На территории выставочного комплекса предусмотрена охраняемая
+                  парковка на 700 машино-мест. На случай большого потока
+                  посетителей, в непосредственной близости от выставочного
+                  центра, на территории CAU (бывш. Университет AKFA)
+                  также имеется охраняемая парковка на 500 машино-мест, которой
+                  могут воспользоваться все желающие.
+                </li>
+              </ul>
+            </div>
+
+            <div class="observer__participants">
+              <h2 class="title" data-aos="fade-right">Каталог участников</h2>
+
+              <p data-aos="fade-right">Как стать участником выставки?</p>
+
+              <ul>
+                <li data-aos="fade-right" data-lang="visitor_1">
+                  Удобное расположение CAEx даёт возможность всем
+                  его посетителям беспрепятственно добраться до выставочного
+                  комплекса. Выставочный комплекс находится в шаговой
+                  доступности от парка «Янги Узбекистон». Для удобства
+                  посетителей на время проведения выставки будет организован
+                  групповой трансфер. Комфортабельные шаттлы (автобусы)
+                  бесплатно доставят всех желающих от точки сбора.
+                </li>
+                <li data-aos="fade-right" data-lang="visitor_2">
+                  На территории выставочного комплекса предусмотрена охраняемая
+                  парковка на 700 машино-мест. На случай большого потока
+                  посетителей, в непосредственной близости от выставочного
+                  центра, на территории CAU (бывш. Университет AKFA)
+                  также имеется охраняемая парковка на 500 машино-мест, которой
+                  могут воспользоваться все желающие.
+                </li>
+              </ul>
+            </div>
+
+            <div class="observer__useful">
+              <h2 class="title" data-aos="fade-right">Полезные советы</h2>
+
+              <p data-aos="fade-right">Как стать участником выставки?</p>
+
+              <ul>
+                <li data-aos="fade-right" data-lang="visitor_1">
+                  Удобное расположение CAEx даёт возможность всем
+                  его посетителям беспрепятственно добраться до выставочного
+                  комплекса. Выставочный комплекс находится в шаговой
+                  доступности от парка «Янги Узбекистон». Для удобства
+                  посетителей на время проведения выставки будет организован
+                  групповой трансфер. Комфортабельные шаттлы (автобусы)
+                  бесплатно доставят всех желающих от точки сбора.
+                </li>
+                <li data-aos="fade-right" data-lang="visitor_2">
+                  На территории выставочного комплекса предусмотрена охраняемая
+                  парковка на 700 машино-мест. На случай большого потока
+                  посетителей, в непосредственной близости от выставочного
+                  центра, на территории CAU (бывш. Университет AKFA)
+                  также имеется охраняемая парковка на 500 машино-мест, которой
+                  могут воспользоваться все желающие.
+                </li>
+              </ul>
+            </div>
+
+            <div class="observerBtn" data-aos="fade-up">
+              <button
+                type="button"
+                class="observerBtnActive"
+                data-lang="registration_link"
+              >
+                Регистрация
+              </button>
+              <button type="button" data-lang="observerParticipantsBtn">
+                Каталог участников
+              </button>
+              <button type="button" data-lang="observerUsefulBtn">
+                Полезные советы
+              </button>
+            </div>
+          </div>
+          <div class="observer__image">
+            <img
+              src="./images/observer__image1.jpeg"
+              alt="uchastnikam"
+              data-aos="zoom-in-right"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- End of Observers section v2 -->
+
+      <!--* COntact form section -->
+      <section class="contact__form" id="contact">
+        <div class="container contact__form-wrapper">
+          <div class="contact__form-group">
+            <div class="contact__form-group-btn">
+              <button
+                id="visitorBtn"
+                class="form-group-active"
+                data-lang="visitors_btn_text"
+              >
+                Посетителям
+              </button>
+              <button id="participantsBtn" data-lang="participants_btn_text">
+                Участникам
+              </button>
+            </div>
+
+            <!-- ! visitors__form -->
+            <form id="visitors__form">
+              <!-- Input name -->
+              <label for="input_name_placeholder">
+                <span data-lang="input_name_label">Ваше имя</span>
+                <input
+                  type="text"
+                  id="input_name_placeholder"
+                  placeholder="Введите имя*"
+                  required
+                />
+              </label>
+
+              <!-- Input email -->
+              <label for="inputEmail">
+                <span data-lang="input_email_label">Электронная почта</span>
+                <input
+                  type="email"
+                  id="input_email_placeholder"
+                  placeholder="Введите ваш e-mail*"
+                  required
+                />
+              </label>
+
+              <!-- Input phone number -->
+              <label for="input_phone_placeholder">
+                <span data-lang="input_phone_label">Ваш телефон</span>
+                <input
+                  type="number"
+                  id="input_phone_placeholder"
+                  placeholder="Введите номер телефона*"
+                  required
+                />
+              </label>
+
+              <!-- Select option -->
+              <label for="selected">
+                <span>Мероприятие</span>
+                <select id="selected" required>
+                  <option value="" selected>
+                    Выберите мероприятие для посещения*
+                  </option>
+                  <option value="1">Выберите мероприятие 1*</option>
+                  <option value="2">Выберите мероприятие 2*</option>
+                  <option value="3">Выберите мероприятие 3*</option>
+                  <option value="4">Выберите мероприятие 4*</option>
+                </select>
+              </label>
+
+              <!--  -->
+              <label for="input_message_placeholder">
+                <span data-lang="input_message_label">Сообщение</span>
+                <input
+                  type="text"
+                  id="input_message_placeholder"
+                  placeholder="Введите текст сообщения"
+                />
+              </label>
+
+              <button class="contact__form-btn">
+                <span data-lang="submit_button_text">Отправить</span>
+              </button>
+            </form>
+            <!-- ! End of visitors__form -->
+
+            <!-- ! participants__form -->
+            <form id="participants__form">
+              <!-- Input company -->
+              <label for="inputCompany">
+                <span data-lang="input_company_label">Компания</span>
+                <input
+                  type="text"
+                  id="inputCompany"
+                  placeholder="Введите название вашей компании*"
+                  required
+                />
+              </label>
+
+              <!-- Input name -->
+              <label for="input-name">
+                <span data-lang="input_name_label">Ваше имя</span>
+                <input
+                  type="text"
+                  id="input_name_placeholder"
+                  placeholder="Введите имя*"
+                  required
+                />
+              </label>
+
+              <!-- Input Должность -->
+              <label for="input_job_placeholder">
+                <span>Должность</span>
+                <input
+                  type="text"
+                  id="input_job_placeholder"
+                  placeholder="Введите вашу должность*"
+                  required
+                />
+              </label>
+
+              <!-- Input email -->
+              <label for="input_email_placeholder">
+                <span data-lang="input_email_label">Электронная почта</span>
+                <input
+                  type="email"
+                  id="input_email_placeholder"
+                  placeholder="Введите ваш e-mail*"
+                  required
+                />
+              </label>
+
+              <!-- Input phone number -->
+              <label for="input-phone-number">
+                <span data-lang="input_phone_label">Ваш телефон</span>
+                <input
+                  type="number"
+                  id="input_phone_placeholder"
+                  placeholder="Введите номер телефона*"
+                  required
+                />
+              </label>
+
+              <!-- Input promocod -->
+              <label for="input_country_placeholder">
+                <span data-lang="input_country_label">Страна</span>
+                <input
+                  type="text"
+                  id="input_country_placeholder"
+                  placeholder="Укажите из какой вы страны*"
+                  required
+                />
+              </label>
+
+              <button class="contact__form-btn">
+                <span data-lang="submit_button_text">Отправить</span>
+              </button>
+            </form>
+            <!-- ! End of participants__form -->
+          </div>
+
+          <div class="map__location">
+            <iframe
+              src="https://yandex.uz/map-widget/v1/?ll=69.430164%2C41.328926&mode=search&oid=187997993149&ol=biz&z=14.28"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!--* End of COntact form section -->
+    </main>
+
+    <!--* Footer  -->
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <!-- Footer navbar links -->
+        <div class="footer__navbar">
+          <a href="index.html" class="logo" id="logo">
+            <img
+              src="./images/caex__logo-light.svg"
+              alt="CAEx Uzbekistan logo"
+              width="328"
+            />
+          </a>
+
+          <ul class="footer__navbar__list">
+            <li class="footer__navbar__list-item">
+              <a href="#" data-lang="navItem_1">О комплексе</a>
+            </li>
+            <li class="footer__navbar__list-item">
+              <a href="#" data-lang="about_link">Календарь мероприятий</a>
+            </li>
+            <li class="footer__navbar__list-item">
+              <a href="#" data-lang="news_link">Новости</a>
+            </li>
+            <li class="footer__navbar__list-item">
+              <a href="#" data-lang="vacancies_link">Вакансии</a>
+            </li>
+            <li class="footer__navbar__list-item">
+              <a href="#contact" data-lang="contact_link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <!-- End of footer navbar links -->
+
+        <!-- contact info -->
+        <div class="footer__contact">
+          <div>
+            <h3 data-lang="address_title">Address</h3>
+            <a
+              href="https://yandex.uz/map-widget/v1/?ll=69.430164%2C41.328926&mode=search&oid=187997993149&ol=biz&z=14.28"
+              data-lang="address_content"
+            >
+              Ташкент, Мирзо Улугбекский район, МСГ «Баркамол», улица Миллий
+              бог, дом №1.Ориентир: Университет Akfa
+            </a>
+          </div>
+
+          <div>
+            <h3 data-lang="phone_title">Телефон</h3>
+
+            <a href="tel:+998781133333"
+              >+998 (78) 113-33-33</a
+            >
+          </div>
+
+          <div>
+            <h3 data-lang="email_title">Электронная почта</h3>
+
+            <a href="mailto:info@caex-uzbekistan.com"
+              >info@caex-uzbekistan.com</a
+            >
+          </div>
+        </div>
+        <!-- End of contact info -->
+
+        <!-- Footer line -->
+        <hr class="footer-line" />
+        <!-- Footer line end of -->
+
+        <!-- Footer socials links -->
+        <div class="footer__socials">
+          <ul class="footer__socials__list">
+            <li class="footer__socials__list-item">
+              <a href="#">Telegram</a>
+            </li>
+            <li class="footer__socials__list-item">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="footer__socials__list-item">
+              <a href="#">Instagram</a>
+            </li>
+            <li class="footer__socials__list-item">
+              <a href="#">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <!-- End of footer socials links -->
+      </div>
+    </footer>
+    <!--* Footer todo -->
+
+    <!-- ! Maps javascript code -->
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=b6a870ec-d914-424a-a003-b2d702a5d3db&lang=en"
+      type="text/javascript"
+    ></script>
+    <script defer src="./js/maps.js"></script>
+    <!--! End of Maps javascript code -->
+
+    <!-- AOS Animation js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./js/lang.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

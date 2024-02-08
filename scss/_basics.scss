@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1750px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "PT Root UI", sans-serif;
+  background: var(
+    --Gradient,
+    linear-gradient(72deg, #ffe5c1 0%, #c39270 158.83%)
+  );
+}
+
+section {
+  overflow: hidden;
+}
+
+.last__intact {
+  margin-block: 357px 159px !important;
+
+  @include mobile() {
+    margin-block: 150px !important;
+  }
+}
+
+.paddingB {
+  padding-bottom: 160px !important;
+
+  @include mobile() {
+    padding-bottom: 80px!important;
+  }
+
+  @include media(0px, 540px) {
+    padding-bottom: 40px !important;
+  }
+}

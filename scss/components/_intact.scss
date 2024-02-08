@@ -1,0 +1,223 @@
+.intact {
+  padding: 357px 0 0px;
+}
+
+.intact_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.intact_left {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  padding: 0 120px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.intact_left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.intact_left-content :where(p, li) {
+  max-width: 617px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 100%;
+}
+
+.intact_left-content hr {
+  width: 100%;
+}
+
+.intact_image {
+  margin-top: -200px;
+  max-width: 569px;
+}
+
+.intact_title {
+  color: $orange;
+  font-size: 48px;
+  font-weight: 400;
+
+  span {
+    font-family: "Apoc Normal";
+    font-style: italic;
+  }
+}
+
+.intact_right {
+  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+// ? Reverse the section
+.section__row-reverse {
+  flex-direction: row-reverse;
+}
+
+.section__row-reverse .intact_image {
+  align-self: flex-end;
+}
+
+//?-----------------------media---------------------
+
+@include media(1200px, 1500px) {
+  .intact {
+    padding: 250px 0 0px;
+  }
+
+  .intact_left {
+    gap: 100px;
+    padding-inline: 80px;
+
+    p {
+      line-height: 120%;
+    }
+  }
+
+  .intact_image {
+    margin-top: -150px;
+    max-width: 426px;
+  }
+}
+
+//?-----------------------------Labtoop-------------------------
+@include labtop() {
+  .intact {
+    padding: 200px 0 0px;
+  }
+
+  .intact_left {
+    padding: 50px;
+    gap: 30px;
+
+    p {
+      text-align: justify;
+      line-height: normal;
+    }
+  }
+
+  .intact_left-content {
+    gap: 30px;
+  }
+
+  .intact_title {
+    font-size: 38px;
+  }
+
+  .intact_image {
+    max-width: 356px;
+  }
+}
+
+//?-----------------------Tablet--------------------
+@include tablet() {
+  .intact {
+    padding: 200px 0 0px;
+  }
+
+  .intact_wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intact_left {
+    padding: 50px;
+    gap: 20px;
+
+    p {
+      max-width: 750px;
+      line-height: 120%;
+    }
+  }
+
+  .intact_title {
+    font-size: 38px;
+  }
+
+  .intact_right {
+    height: 600px;
+  }
+
+  .intact_image {
+    max-width: 356px;
+  }
+
+  .section__row-reverse .intact_image {
+    right: 50px;
+  }
+}
+
+//?------------------------Mobile--------------------
+@include mobile() {
+  .intact {
+    padding: 150px 0 0px;
+  }
+
+  .intact_wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intact_left {
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .intact_left-content :where(p, li) {
+    font-size: 12px;
+    text-align: justify;
+    line-height: 120%;
+  }
+
+  .intact_left-content {
+    gap: 15px;
+  }
+
+  .intact_title {
+    font-size: 28px;
+  }
+
+  .intact_image {
+    margin-top: -150px;
+    max-width: 310px;
+  }
+
+  .section__row-reverse .intact_image {
+    right: 30px;
+  }
+}
+
+@include media(0px, 416px) {
+  .intact_left {
+    padding: 20px;
+  }
+
+  .intact_left-content :where(p, li) {
+    font-size: 10px;
+  }
+
+  .intact_title {
+    font-size: 22px;
+  }
+
+  .intact_image {
+    margin-top: -100px;
+    max-width: 100%;
+  }
+
+  .section__row-reverse .intact_image {
+    right: 20px;
+  }
+}
