@@ -434,7 +434,7 @@ const lang = {
     submit_button_text: "Jo'natish",
     input_company_label: "Kompaniya",
     input_country_label: "Davlat",
-    input_job_label: "Vazifa",
+    input_job_label: "Joylashuv",
     checkbox_help_label: "Stand tashkilotlashda yordam kerak",
     checkbox_outside_label: "Tashqi maydon ijarasi kerak",
     about_link: "Tadbirlar taqvimi",
