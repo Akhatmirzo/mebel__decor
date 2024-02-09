@@ -185,3 +185,12 @@
     font-size: 14px;
   }
 }
+
+
+.footer center {
+  display: none;
+
+  @include mobile() {
+    display: block;
+  }
+}
