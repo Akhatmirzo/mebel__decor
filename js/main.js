@@ -154,7 +154,7 @@ AOS.init();
 // You can also pass an optional settings object
 // below listed default settings
 
-let aosCloseOffset = 120;
+let aosCloseOffset = 50;
 if (window.innerWidth < 768) {
   aosCloseOffset = 50;
 }
@@ -179,3 +179,6 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
+
+
+// Backend request
