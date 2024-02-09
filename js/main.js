@@ -7,6 +7,8 @@ const participantsBtn = document.getElementById("participantsBtn");
 // All btn
 const allBtn = document.querySelectorAll(".contact__form-group-btn button");
 
+// todo ------------------------------------------------------------------------------------
+
 // Contact form element replace
 visitorBtn.addEventListener("click", function () {
   allBtn.forEach((btn) => {
@@ -28,10 +30,14 @@ participantsBtn.addEventListener("click", function () {
   visitorsForm.style.display = "none";
 });
 
+// todo ------------------------------------------------------------------------------------
+
 // Observer click text replace
 const observerRegister = document.querySelector(".observer__register");
 const observerparticipant = document.querySelector(".observer__participants");
 const observerUseful = document.querySelector(".observer__useful");
+
+// todo ------------------------------------------------------------------------------------
 
 //observerBtn
 const observerBtn = document.querySelector(".observerBtn");
@@ -53,7 +59,9 @@ for (let i = 0; i < observerBtn.children.length; i++) {
   });
 }
 
-// Navbar
+// todo ------------------------------------------------------------------------------------
+
+// Navbar gamburger js
 const navbarList = document.querySelector(".nav_list");
 const menuBars = document.getElementById("menu_bars");
 const hamburgerBtn = document.getElementById("hamburgerBtn");
@@ -80,22 +88,7 @@ function closeModModal() {
 }
 document.onscroll = closeModModal;
 
-// language
-// Function to set input placeholders based on selected language
-function setPlaceholderText(language) {
-  const languagePlaceholders = placeholders[language];
-  if (languagePlaceholders) {
-    // Set placeholders for each input element
-    Object.keys(languagePlaceholders).forEach((key) => {
-      const inputElements = document.querySelectorAll(`#${key}`);
-      if (inputElements.length > 0) {
-        inputElements.forEach((input) => {
-          input.placeholder = languagePlaceholders[key];
-        });
-      }
-    });
-  }
-}
+// todo ------------------------------------------------------------------------------------
 
 // language
 // Function to set input placeholders based on selected language
@@ -114,9 +107,9 @@ function setPlaceholderText(language) {
   }
 }
 
-const changeLang = function () {
-  let language = this.value || localStorage.getItem("lang");
-  if (!this.value && !localStorage.getItem("lang")) return;
+const changeLang = function (langValue) {
+  let language = langValue || localStorage.getItem("lang");
+  if (!langValue && !localStorage.getItem("lang")) return;
 
   document.querySelectorAll("[data-lang]").forEach((element) => {
     if (lang[language][element.getAttribute("data-lang")]) {
@@ -125,18 +118,43 @@ const changeLang = function () {
   });
 
   setPlaceholderText(language);
-  closeModModal();
 
   localStorage.setItem("lang", language);
 };
 
-const langSelectEl = document.querySelector("#lang");
-langSelectEl.addEventListener("change", changeLang);
+let langSelectEl = localStorage.getItem("lang") || "ru";
+const dropdownFirst = document.querySelector("#dropdownBtn");
+const dropdownBtns = document.querySelectorAll(".option");
+const translateBtnList = document.querySelector(".translateBtnList");
 
-changeLang();
-langSelectEl.value = localStorage.getItem("lang") || "ru";
+// Dropdown button replace value language
+dropdownFirst.children[0].src = `https://caexuzbekistan.com/assets/images/${langSelectEl}.png`;
+dropdownFirst.children[0].alt = langSelectEl;
+dropdownFirst.children[1].innerHTML = langSelectEl;
+dropdownFirst.children[1].style.textTransform = "capitalize";
 
-// bus_stop_point__list
+dropdownBtns.forEach((dropdownBtn) => {
+  dropdownBtn.addEventListener("click", function () {
+    langSelectEl = dropdownBtn.children[0].value;
+    // changeLang(langSelectEl);
+    // translateBtnList.classList.remove("visiable");
+    // closeModModal();
+    localStorage.setItem("lang", langSelectEl);
+    window.location.reload();
+  });
+});
+
+// Languages selected js
+changeLang(langSelectEl);
+
+// dropdown
+dropdownFirst.addEventListener("click", () => {
+  translateBtnList.classList.add("visiable");
+});
+
+// todo ------------------------------------------------------------------------------------
+
+//! bus_stop_point__list
 const busStopPointList = document.querySelector(".busstop__point-content ul");
 for (const pointlist of busStopPointList.children) {
   pointlist.addEventListener("click", function () {
@@ -159,6 +177,8 @@ if (window.innerWidth < 768) {
   aosCloseOffset = 50;
 }
 
+// todo ------------------------------------------------------------------------------------
+
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -180,5 +200,6 @@ AOS.init({
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
 
+// todo ------------------------------------------------------------------------------------
 
 // Backend request

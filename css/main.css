@@ -134,6 +134,10 @@ section {
   gap: 40px;
 }
 
+.nav_list_info {
+  position: relative;
+}
+
 .nav_list_info a {
   color: #2D2E46;
   font-size: 14px;
@@ -145,14 +149,70 @@ section {
   color: #F2632A;
 }
 
-.nav_list_select {
-  background-color: transparent;
+.btn__translate {
   border: none;
-  color: #2D2E46;
-  font-size: 14px;
+  padding: 3px 15px;
+  font-size: 16px;
   font-weight: 500;
-  text-transform: uppercase;
+  background-color: transparent;
+  color: #2d2e46;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+@media (min-width: 0px) and (max-width: 1440px) {
+  .btn__translate {
+    padding: 0;
+    font-size: 18px;
+  }
+}
+
+.translateBtnList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(-50% + 10px));
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background-color: white;
+  z-index: 99999;
+}
+@media (min-width: 0px) and (max-width: 1440px) {
+  .translateBtnList {
+    left: 40px;
+  }
+}
+
+.translateBtnList .btn__translate {
+  padding: 3px 15px;
+}
+
+.translateBtnList li {
   transition: all 0.3s ease;
+}
+
+.translateBtnList li:hover > button {
+  background-color: #ffe5c1;
+}
+@media (min-width: 0px) and (max-width: 1440px) {
+  .translateBtnList li:hover > button {
+    background-color: #fff;
+  }
+}
+
+#dropdownBtn:hover + .translateBtnList {
+  display: flex;
+}
+
+.translateBtnList:hover {
+  display: flex;
+}
+
+@media (min-width: 0px) and (max-width: 1440px) {
+  .visiable {
+    display: flex !important;
+  }
 }
 
 #hamburgerBtn {
